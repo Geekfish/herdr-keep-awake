@@ -55,7 +55,7 @@ pgrep -lf keep-awake-watch
 While an agent works, this shows the `caffeinate` process that the plugin holds:
 
 ```bash
-pgrep -lf "caffeinate -i -w"
+pgrep -lf "caffeinate.*-w"
 ```
 
 ## Test
