@@ -1,0 +1,11 @@
+id = "herdr-keep-awake"
+name = "Keep Awake"
+version = "0.1.0"
+min_herdr_version = "0.8.0"
+description = "Keeps the Mac awake while any Herdr agent is working."
+platforms = ["macos"]
+
+# Long-running poller. Herdr stops it with the session, which also ends the
+# caffeinate it holds.
+[[startup]]
+command = ["bash", "scripts/keep-awake-watch.sh"]
